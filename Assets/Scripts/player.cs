@@ -1,12 +1,12 @@
 using UnityEngine;
-// thay doi gi do
+
 public class Player : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
     private Rigidbody2D rb;
     private void Awake()
     {
-        rb = GetComponent<Rigibody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
     void Start()
     {
