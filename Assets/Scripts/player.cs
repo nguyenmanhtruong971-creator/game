@@ -21,6 +21,6 @@ public class Player : MonoBehaviour
     void MovePlayer()
     {
         Vector2 playerInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        rb.velocity = playerInput.normalized * moveSpeed;
+        rb.linearVelocity = playerInput.normalized * moveSpeed;
     }
 }
