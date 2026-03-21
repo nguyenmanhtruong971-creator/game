@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float moveSpeed = 3f;
 
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
@@ -39,9 +39,21 @@ public class Player : MonoBehaviour
             spriteRenderer.flipX = false;
         }
 
-        if (playerInput.x != 0 || playerInput.y != 0)
+        // Trái phải + đi xéo = 1 bộ
+        // Lên = 1 bộ
+        // Xuống = 1 bộ
+
+        if (playerInput.x != 0) // Trái phải + đi xéo
         {
-            return "move";
+            return "move-1";
+        }
+        else if (playerInput.y > 0)
+        {
+            return "move-2";
+        }
+        else if (playerInput.y < 0)
+        {
+            return "move-3";
         }
         else
         {
