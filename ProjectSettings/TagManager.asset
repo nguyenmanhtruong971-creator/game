@@ -8,7 +8,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Wall
   - Water
   - UI
   - 
@@ -40,6 +40,24 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 2795705535
+    locked: 0
+  - name: tree
+    uniqueID: 4151433783
+    locked: 0
+  - name: Tomb
+    uniqueID: 3078837321
+    locked: 0
+  - name: Walls
+    uniqueID: 2306748591
+    locked: 0
+  - name: Water Barrel
+    uniqueID: 1883161523
+    locked: 0
+  - name: Skullcap
+    uniqueID: 2895885797
     locked: 0
   - name: player
     uniqueID: 1668135431
